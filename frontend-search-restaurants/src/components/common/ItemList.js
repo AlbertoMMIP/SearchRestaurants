@@ -1,8 +1,7 @@
 import React from 'react';
 
-export const ItemList = ({restaurant,indx}) => (
-    
-        <tr key={indx}>
+export const ItemList = ({restaurant}) => (
+        <tr>
             <td className="uk-table-shrink"><img className="uk-preserve-width uk-border-circle" src="resta.jpg" width="40" alt="" /></td>
             <td className="uk-width-large">
                 <p>{restaurant.name}  </p>
@@ -32,5 +31,5 @@ export const ItemList = ({restaurant,indx}) => (
                     </div>
                 </div>
             </td>
-        </tr> 
+        </tr>
 );
