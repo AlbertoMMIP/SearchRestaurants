@@ -11,7 +11,7 @@ class Searching extends Component{
             arraySearching:[]
         }
     }
-    componentWillMount(){
+    componentWillMount () {
         getData()
             .then(restaurants => {
                 this.setState({arrayRestaurants:restaurants.data,arraySearching:restaurants.data});

@@ -1,5 +1,18 @@
-import axios from 'axios';
 
 export const getData = () => {
-    return axios.get('https://s3-us-west-2.amazonaws.com/lgoveabucket/data_melp.json');
+  return { 
+    data: [{
+      name: 'Restaurant name',
+      contact: {
+        site: 'www.dg.com',
+        email: 'svcvd@csdc.com'
+      },
+      address: {
+        street: 'dsfds',
+        city: 'Mexico',
+        state: 'asdsfsd'
+      },
+      rating: 4
+    }]
+  }
 }
